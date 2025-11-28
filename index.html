@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChronoCanvas — MCA Project (Polished)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">ChronoCanvas <span class="muted">Local History Archive</span></div>
+      <nav class="topnav">
+        <button data-nav="#/dashboard" class="navbtn">Dashboard</button>
+        <button data-nav="#/timeline" class="navbtn">Timeline</button>
+        <button data-nav="#/gallery" class="navbtn">Gallery</button>
+        <button data-nav="#/upload" class="navbtn">Upload</button>
+        <button data-nav="#/myuploads" class="navbtn">My Uploads</button>
+        <button data-nav="#/admin" class="navbtn admin-only hidden">Admin</button>
+      </nav>
+      <div class="user-area">
+        <span id="userDisplay">Guest</span>
+        <button id="btnLogin" class="small">Login</button>
+        <button id="btnLogout" class="small hidden">Logout</button>
+      </div>
+    </header>
+
+    <main id="main"></main>
+
+    <div id="modalRoot"></div>
+
+    <footer class="footer">
+      ChronoCanvas • MCA Project • Polished Theme
+    </footer>
+  </div>
+
+  <script type="module" src="js/router.js"></script>
+</body>
+</html>
